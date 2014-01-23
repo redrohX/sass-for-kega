@@ -1,3 +1,22 @@
+/* Box Sizing @mixin with IE6, IE7 hack. */
+/* Example */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  * .ie7 {
+    behavior: "/skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc"; }
+
+body {
+  overflow-y: scroll;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: #333;
+  margin: 0; }
+
 .autoshipping-country-select-overlay {
   position: fixed;
   top: 0;
@@ -3386,14 +3405,6 @@ audio:not([controls]) {
   display: none;
   height: 0; }
 
-body {
-  overflow-y: scroll;
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 400;
-  font-size: 62.5%;
-  color: #333;
-  margin: 0; }
-
 h1 {
   font-size: 2em;
   margin: .67em 0; }
@@ -3478,14 +3489,6 @@ table {
   border-spacing: 0;
   width: 100%;
   font-size: 1.2em; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  behavior: url(/skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);
-  margin: 0;
-  padding: 0; }
 
 .ie7 body {
   overflow: auto; }

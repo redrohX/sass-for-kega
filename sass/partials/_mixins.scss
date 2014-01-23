@@ -1,5 +1,13 @@
-@mixin box-sizing($box-model) {
+/* Box Sizing @mixin with IE6, IE7 hack. */
+
+@mixin box-sizing($box-model, $url) {
 	-webkit-box-sizing: $box-model; // Safari <= 5
 	-moz-box-sizing: $box-model; // Firefox <= 19
 	box-sizing: $box-model;
+	.ie7 {
+		behavior: $url; // <= IE6 & IE7
+	}
 }
+
+/* Example */
+// @include box-sizing(border-box, /skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);

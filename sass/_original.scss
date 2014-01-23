@@ -3990,15 +3990,6 @@ display:none;
 height:0;
 }
 
-body {
-  overflow-y:scroll;
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  font-size: $base-font-size;
-  color:#333;
-  margin:0;
-}
-
 h1 {
 font-size:2em;
 margin:.67em 0;
@@ -4103,15 +4094,6 @@ border-collapse:collapse;
 border-spacing:0;
 width:100%;
 font-size:1.2em;
-}
-
-* {
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box;
-behavior:url(/skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);
-margin:0;
-padding:0;
 }
 
 .ie7 body {
