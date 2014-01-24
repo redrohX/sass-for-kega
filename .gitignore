@@ -5,12 +5,14 @@ Desktop.ini
 # Cache files
 ._*
 Thumbs.db
-.DS_Store
 .gitignore~
 .sass-cache*
 
 # Log files
 *.log
+
+# NodeJS
+node_modules
 
 # Files that might appear on external disks
 .Spotlight-V100
