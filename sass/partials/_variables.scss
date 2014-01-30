@@ -1,15 +1,30 @@
 // Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
+$light-weight: 100;
+$medium-weight: 400;
+$bold-weight: 600;
 
-// Base Font
-$base-font-family: "Droid Sans", sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 62.5%;
-$base-line-height: 1.4;
+// Colors
+$black: #000;
+$darkgray: #333;
+$mediumgray: #797989;
+$white: #fff;
+$mediumbrown: #ad6a00;
+$lightbrown: #c77a00;
 
-// Headings
-$header-font-weight: $bold;
+// Fonts
+$default-font-size: 62.5%;
 
-$base-color: 'orange';
+$primary-font-size: $default-font-size;
+$primary-font-family: "Droid Sans", sans-serif;
+$primary-font-weight: $medium-weight;
+$primary-line-height: 1.4;
+$primary-text-color: $darkgray;
+
+$link-color: $darkgray;
+$link-hover-color: $black;
+
+$primary-button-bg-color: $mediumbrown;
+$primary-button-txt-color: $white;
+$primary-button-hover-color: $lightbrown;
+$alt-font-family: "Roboto", Arial, sans-serif;
+$header-font-weight: $bold-weight;

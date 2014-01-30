@@ -6,9 +6,14 @@
 
 body {
 	overflow-y: scroll;
-	font-family: $base-font-family;
-	font-weight: $base-font-weight;
-	font-size: $base-font-size;
-	color: $base-color;
+	font-family: $primary-font-family;
+	font-weight: $primary-font-weight;
+	font-size: $primary-font-size;
+	color: $primary-text-color;
 	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: $default-font-size;
+	font-family: $alt-font-family;
 }

@@ -1,0 +1,19 @@
+%default-button {
+	background: $primary-button-bg-color;
+	border: 0;
+	color: $primary-button-txt-color;
+	text-transform: uppercase;
+	padding: 5px 15px;
+}
+
+.btn-cart {
+	@extend %default-button;
+	font-size: 1.2em;
+	padding: 5px 10px;
+	&.disabled {
+		@extend %is-disabled;
+	}
+	&:hover {
+		background: $primary-button-hover-color;
+	}
+}

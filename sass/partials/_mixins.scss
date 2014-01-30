@@ -1,4 +1,4 @@
-/* Box Sizing @mixin with IE6, IE7 hack. */
+// Box Sizing @mixin with IE6, IE7 hack.
 
 @mixin box-sizing($box-model, $url) {
 	box-sizing: $box-model;
@@ -7,6 +7,15 @@
 	}
 }
 
-/* Example */
+// Example
 // @include box-sizing(border-box, /skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);
 // Using Schepp's polyfill for older IE browsers: https://github.com/Schepp/box-sizing-polyfill
+
+
+// Opacity
+
+@mixin opacity($trans) {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+	filter: alpha(opacity=#{$trans * 100});
+	opacity: $trans;
+}

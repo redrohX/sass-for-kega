@@ -4130,15 +4130,6 @@ margin:0 auto;
 vertical-align:baseline;
 }
 
-.button {
-background:#ad6a00;
-border:0;
-color:#fff;
-font:300 1.2em Roboto, Arial, sans-serif;
-text-transform:uppercase;
-padding:5px 15px;
-}
-
 .ie7 .button {
 overflow:visible;
 padding:0 15px;
@@ -4146,13 +4137,6 @@ padding:0 15px;
 
 .button-alt {
 background:#7fa4c7;
-}
-
-.button.disabled,.button[disabled] {
--ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-filter:alpha(opacity=50);
--moz-opacity:0.5;
-opacity:0.5;
 }
 
 .col-left .widget {
@@ -9900,7 +9884,7 @@ color:#fff;
 text-decoration:none;
 }
 
-.button:hover,.mode-lookbook-detailpage .add-to-cart:hover {
+.mode-lookbook-detailpage .add-to-cart:hover {
 background-color:#c77a00;
 }
 
