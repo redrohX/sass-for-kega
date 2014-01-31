@@ -1,7 +1,4 @@
-// Font weights
-$light-weight: 100;
-$medium-weight: 400;
-$bold-weight: 600;
+$page-width: 960px;
 
 // Colors
 $black: #000;
@@ -12,6 +9,11 @@ $mediumbrown: #ad6a00;
 $lightbrown: #c77a00;
 
 // Fonts
+
+$light-weight: 100;
+$medium-weight: 400;
+$bold-weight: 600;
+
 $default-font-size: 62.5%;
 
 $primary-font-size: $default-font-size;

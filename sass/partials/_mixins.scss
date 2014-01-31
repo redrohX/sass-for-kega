@@ -1,4 +1,6 @@
 // Box Sizing @mixin with IE6, IE7 hack.
+// @include box-sizing(border-box, /skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);
+// Using Schepp's polyfill for older IE browsers: https://github.com/Schepp/box-sizing-polyfill
 
 @mixin box-sizing($box-model, $url) {
 	box-sizing: $box-model;
@@ -7,11 +9,6 @@
 	}
 }
 
-// Example
-// @include box-sizing(border-box, /skin/frontend/kega/default/css/ie6-7-boxsizing/boxsizing.htc);
-// Using Schepp's polyfill for older IE browsers: https://github.com/Schepp/box-sizing-polyfill
-
-
 // Opacity
 
 @mixin opacity($trans) {
@@ -19,3 +16,9 @@
 	filter: alpha(opacity=#{$trans * 100});
 	opacity: $trans;
 }
+
+// Box Shadow
+
+@mixin box-shadow($value) {
+	box-shadow: $value;
+} 

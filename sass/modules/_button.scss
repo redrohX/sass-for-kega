@@ -6,7 +6,7 @@
 	padding: 5px 15px;
 }
 
-.btn-cart {
+.btn-primary {
 	@extend %default-button;
 	font-size: 1.2em;
 	padding: 5px 10px;
@@ -15,5 +15,8 @@
 	}
 	&:hover {
 		background: $primary-button-hover-color;
+	}
+	&:active {
+		@include box-shadow(0 0 2px 2px #FFFFFF);
 	}
 }
