@@ -10,31 +10,27 @@ module.exports = function(grunt) {
 
         sass: {
             dist: {
+                options: {
+                    style: 'compressed'
+                },
                 files: {
                     'css/main.css' : 'sass/main.scss'
                 }
             }
         },
 
-        cssmin: {
-            minify: {
-                src: 'css/main.css',
-                dest: 'css/main.css'
-            }
-        },
-
         watch: {
             css: {
                 files: '**/*.scss',
-                tasks: ['sass', 'autoprefixer', 'cssmin']
+                tasks: ['sass', 'autoprefixer']
             }
         }
     });
 
+    //grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['watch']);
 }
