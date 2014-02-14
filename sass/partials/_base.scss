@@ -19,6 +19,100 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page {
+	@extend %clearfix;
 	width: $page-width;
 	margin: 0 auto;
+}
+
+.header-container {
+	@extend %clearfix;
+}
+
+.header-column-wrapper {
+	@extend %clearfix;
+}
+
+.mini-cart-list {
+	@extend %clearfix;
+}
+
+.inline-update {
+	@extend %clearfix;
+}
+
+.nav-container {
+	@extend %clearfix;
+}
+
+.breadcrumbs {
+	@extend %clearfix;
+}
+
+.col1-layout {
+	@extend %clearfix;
+}
+
+.col-main {
+	@extend %clearfix;
+}
+
+.options-container-big {
+	@extend %clearfix;
+}
+
+.product-essential {
+	@extend %clearfix;
+}
+
+.product-media {
+	@extend %clearfix;
+}
+
+.social-bar {
+	@extend %clearfix;
+}
+
+.product-info-wrap {
+	@extend %clearfix;
+}
+
+.product-options-bottom {
+	@extend %clearfix;
+}
+
+.size-links {
+	@extend %clearfix;
+}
+
+.footer-columns {
+	@extend %clearfix;
+}
+
+.footer-icons {
+	@extend %clearfix;
+}
+
+.ui-helper-clearfix {
+	@extend %clearfix;
+}
+
+.ui-tabs .ui-tabs-anchor {
+	@extend %tab-box;
+}
+
+.product-view {
+	margin: 0 5px;
+}
+
+.product-img-box {
+	float: left;
+	width: 470px;
+}
+
+.product-info-wrap {
+	@extend %info-box;
+}
+
+.theme-popup #cboxWrapper {
+	@include box-shadow(0 0 7px 0 rgba(0,0,0,.32));
 }

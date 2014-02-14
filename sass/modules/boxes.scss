@@ -1,0 +1,15 @@
+%tab-box {
+	background: $box-dark-color;
+	text-transform: uppercase;
+	color: $text-color-inverted;
+	font-family: $alt-font-family;
+	font-size: 1.4em;
+}
+
+%info-box {
+	float: left;
+	width: 480px;
+	min-height: 499px;
+	border-left: 1px solid #fff;
+	background: $box-light-color;
+}

@@ -4,6 +4,7 @@ $page-width: 960px;
 $black: #000;
 $darkgray: #333;
 $mediumgray: #797989;
+$lightgray: #eee;
 $white: #fff;
 $mediumbrown: #ad6a00;
 $lightbrown: #c77a00;
@@ -22,6 +23,8 @@ $primary-font-weight: $medium-weight;
 $primary-line-height: 1.4;
 $primary-text-color: $darkgray;
 
+$text-color-inverted: $white;
+
 $link-color: $darkgray;
 $link-hover-color: $black;
 
@@ -30,3 +33,7 @@ $primary-button-txt-color: $white;
 $primary-button-hover-color: $lightbrown;
 $alt-font-family: "Roboto", Arial, sans-serif;
 $header-font-weight: $bold-weight;
+
+$box-light-color: $lightgray;
+$box-medium-color: $mediumgray;
+$box-dark-color: $darkgray;

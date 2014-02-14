@@ -98,12 +98,6 @@ margin:0;
 padding:0;
 }
 
-.ui-helper-clearfix:before,.ui-helper-clearfix:after {
-content:"";
-display:table;
-border-collapse:collapse;
-}
-
 .ui-helper-zfix {
 width:100%;
 height:100%;
@@ -6000,22 +5994,9 @@ width:350px;
 height:500px;
 }
 
-.product-img-box {
-float:left;
-width:470px;
-}
-
 .product-shop,.product-collateral {
 border-top-width:0;
 padding-top:10px;
-}
-
-.product-info-wrap {
-float:left;
-width:480px;
-min-height:499px;
-border-left:1px solid #fff;
-background:#eee;
 }
 
 .click-to-zoom {
@@ -6112,17 +6093,12 @@ margin:5px -2px;
 
 .product-main-info .color-options .color-option {
 float:left;
--moz-box-shadow:inset 2px -2px 3px 0 rgba(0,0,0,0.19);
--webkit-box-shadow:inset 2px -2px 3px 0 rgba(0,0,0,0.19);
-box-shadow:inset 2px -2px 3px 0 rgba(0,0,0,0.19);
 margin:5px;
 padding:12px;
 }
 
 .product-main-info .color-options .color-option:active,.product-main-info .color-options .color-option:hover {
 border:1px solid #ece6e0;
--moz-box-shadow:none;
--webkit-box-shadow:none;
 box-shadow:none;
 margin:1px;
 padding:15px;
@@ -6157,14 +6133,6 @@ border-left:0 none;
 
 .ui-tabs .ui-tabs-nav li.last a {
 width:148px;
-}
-
-.ui-tabs .ui-tabs-anchor {
-background:#333;
-font:400 1.4em/1 Roboto, sans-serif;
-text-transform:uppercase;
-color:#fff;
-padding:.9em 1em;
 }
 
 .ui-tabs .ui-tabs-active .ui-tabs-anchor {
@@ -8526,10 +8494,6 @@ width:128px;
 display:block;
 border:1px solid #d9d9d9;
 border-bottom:none;
--webkit-border-top-left-radius:5px;
--webkit-border-top-right-radius:5px;
--moz-border-radius-topleft:5px;
--moz-border-radius-topright:5px;
 border-top-left-radius:5px;
 border-top-right-radius:5px;
 padding:10px;
@@ -8553,10 +8517,6 @@ border-bottom:none;
 position:relative;
 border:1px solid #d9d9d9;
 border-top:none;
--webkit-border-bottom-left-radius:5px;
--webkit-border-bottom-right-radius:5px;
--moz-border-radius-bottomleft:5px;
--moz-border-radius-bottomright:5px;
 border-bottom-left-radius:5px;
 border-bottom-right-radius:5px;
 }
@@ -8688,8 +8648,6 @@ margin:12px 0 0;
 
 .pickup-alt {
 border:1px solid #d5c5be;
--webkit-border-radius:4px;
--moz-border-radius:4px;
 border-radius:4px;
 background:#FDF8F4;
 background-image:0 color-stop(1,rgb(254,235,222));
@@ -8712,8 +8670,6 @@ z-index:1;
 .stock-notification-form fieldset {
 background-color:#efefef;
 color:#333;
--webkit-border-radius:6px;
--moz-border-radius:6px;
 border-radius:6px;
 padding:19px 12px;
 }
@@ -8766,8 +8722,6 @@ padding:5px 9px;
 }
 
 .stock-notification-form input,.stock-notification-form .dropdown-alt {
--moz-border-radius:3px;
--webkit-border-radius:3px;
 border-radius:3px;
 }
 
@@ -8793,8 +8747,6 @@ height:33px;
 border:1px solid #efefef;
 background-color:#efefef;
 text-align:center;
--moz-border-radius:4px;
--webkit-border-radius:4px;
 border-radius:4px;
 margin:0 10px 0 0;
 padding:12px 14px;
@@ -9287,11 +9239,6 @@ background:#fff;
 box-sizing:content-box;
 }
 
-.theme-popup #cboxWrapper {
--webkit-box-shadow:0 0 7px 0 rgba(0,0,0,.32);
-box-shadow:0 0 7px 0 rgba(0,0,0,.32);
-}
-
 #colorbox,#cboxContent {
 overflow:visible!important;
 }
@@ -9396,14 +9343,6 @@ display:none;
 
 .autoshipping-selectmenu .autoshipping-option.active,.ui-loading .ui-loader,.ui-btn-block,.ui-header .ui-btn-block,.ui-footer .ui-btn-block,.ui-selectmenu-list .ui-li .ui-icon,.ui-panel-dismiss-open,.cc-notification-permissions li strong,.cc-notification-buttons li,.cc-notification-buttons a,article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary,.sort-select span,.sort-select a,.theme1 .controls div.input-box,.active .mini-content,.mini-cart-list .product-image img,.mini-cart-wrap-active .mini-cart-list,.rs-carousel.widget a,.rs-carousel.widget img,.ie7 .nav-container .level0.hover div.level0,.block-layered-nav .active > ul,.filter-wrapper .block-layered-nav,.customer-dob input,.products-list .product-image a,.product-list-hover .image-gallery,.product-list-hover .sizes,.list-size .list-size .li,.size-links li,.widget-row li,.widget-row .item,.widget-row a,.grid-widget a,.banner:hover .banner-overlay,.store-list .expanded .address,.store-list .detail .address,.store-details address span,.opening-content.expanded,.vacancy-content .item-wrap a,.active .stock-notification-form,.looks-navigation li.expanded,.looks-navigation li a,.looks-navigation ul:hover li.level-1,.looks-collection li img,.looks-collection li a:hover .menu-title,.products-list-lookbook .product-image img,.mode-popup.mode-lookbook-detailpage .addthis_toolbox .at300b,.mode-popup.mode-lookbook-detailpage .right .condensed-heading,.popup-look-link:hover .look-banner-hover,.mode-campaign .grid-widget .wallpaper-download-active .wallpaper-download,.mode-campaign .grid-widget .wallpaper-download-active .wallpaper-overlay,.mode-campaign .banner:hover .social-bar,.mode-campaign .banner:hover .addthis-overlay {
 display:block;
-}
-
-.ui-helper-clearfix:after,.ui-navbar ul:after,.ui-controlgroup-horizontal .ui-controlgroup-controls:after,.ui-rangeslider:after,div.ui-slider:after,.clear,div.validation-passed:after,div.validation-error:after,.clearfix:after,.mode-stockorders .copyright {
-clear:both;
-}
-
-.ui-helper-clearfix,.my-account .info-box.newsletter {
-min-height:0;
 }
 
 .ui-resizable,.ui-menu-icons,.ui-popup,* html .ui-selectmenu-menu li a,.mini-outer,.account-create,.account-colset,.products-list .item-wrap,.contact-form,.faq_search .field,.cms-index-noroute .col-main,.cms-index-noroute .no-route-search-wrap .field,.vacancy-pages .col-main .cms-content,.sp-methods .store-pickup-fieldset .field,.mode-popup.mode-lookbook-detailpage .col-main,.error-503 .col-main,.catalogsearch-searchbox .field {
@@ -9754,17 +9693,12 @@ border-bottom-left-radius:inherit;
 margin:.25em 0;
 }
 
-.ui-bar .ui-controlgroup,.toolbar-bottom .toolbar,.catalog-product-view .product-view,.faq-pages .col-main,footer {
+.ui-bar .ui-controlgroup,.toolbar-bottom .toolbar,.catalog-product-view,.faq-pages .col-main,footer {
 margin:0 5px;
 }
 
 .ui-controlgroup li,.mode-index .faqbox ul,.widget-banner li {
 list-style:none;
-}
-
-.ui-controlgroup-horizontal .ui-controlgroup-controls:before,.ui-controlgroup-horizontal .ui-controlgroup-controls:after,.ui-rangeslider:before,.ui-rangeslider:after,div.ui-slider:before,div.ui-slider:after,div.validation-passed:before,div.validation-passed:after,div.validation-error:before,div.validation-error:after,.clearfix:before,.clearfix:after {
-content:"";
-display:table;
 }
 
 .ui-controlgroup-vertical .ui-btn,.ui-field-contain:last-child,.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > .ui-li.ui-last-child {
