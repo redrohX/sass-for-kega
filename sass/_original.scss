@@ -744,7 +744,6 @@ padding:0;
 .ui-tabs .ui-tabs-nav li a {
 float:left;
 text-decoration:none;
-width:129px;
 border-left:1px solid #fff;
 padding:12px 15px 15px 20px;
 }
@@ -6126,19 +6125,7 @@ margin-left:10px;
 }
 
 .ui-tabs .ui-tabs-nav li.first a {
-width:190px;
-padding-left:15px;
 border-left:0 none;
-}
-
-.ui-tabs .ui-tabs-nav li.last a {
-width:148px;
-}
-
-.ui-tabs .ui-tabs-active .ui-tabs-anchor {
-border:0 none;
-background:transparent;
-color:#333;
 }
 
 .product-tabs .widget-banner {

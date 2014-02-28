@@ -96,23 +96,47 @@ h1, h2, h3, h4, h5, h6 {
 	@extend %clearfix;
 }
 
-.ui-tabs .ui-tabs-anchor {
-	@extend %tab-box;
-}
+// .ui-tabs .ui-tabs-active .ui-tabs-anchor {
+// 	@extend %tab-box--is-light;
+// }
+
+// .ui-tabs .ui-tabs-anchor {
+// 	@extend %tab-box--is-dark;
+// }
 
 .product-view {
 	margin: 0 5px;
 }
 
 .product-img-box {
-	float: left;
-	width: 470px;
+	@extend %common-box;
 }
 
 .product-info-wrap {
-	@extend %info-box;
+	@extend %common-box;
+	min-height: 499px;
+	border-left: 1px solid #fff;
+	background: $box-light-color;
 }
 
 .theme-popup #cboxWrapper {
 	@include box-shadow(0 0 7px 0 rgba(0,0,0,.32));
+}
+
+.alt-box {
+	@extend %alt-box--dark;
+}
+
+.alt-box--alt {
+	@extend %alt-box--light;
+}
+
+.alt-box__is-active {
+	@extend %alt-box--dark;
+	@include box-shadow(0 0 7px 0 rgba(0, 122, 218, 0.65));
+}
+
+.alt-box--alt__is-active {
+	@extend %alt-box--light;
+	@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
 }

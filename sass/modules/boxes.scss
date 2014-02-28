@@ -1,15 +1,48 @@
-%tab-box {
-	background: $box-dark-color;
+%alt-box {
 	text-transform: uppercase;
-	color: $text-color-inverted;
 	font-family: $alt-font-family;
 	font-size: 1.4em;
+	padding: 12px 15px 15px 20px;
 }
 
-%info-box {
-	float: left;
-	width: 480px;
-	min-height: 499px;
-	border-left: 1px solid #fff;
-	background: $box-light-color;
+%alt-box--dark {
+	@extend %alt-box;
+	background: $box-dark-color;
+	color: $text-color-inverted;
 }
+
+%alt-box--light {
+	@extend %alt-box;
+	background: $box-light-color;
+	color: $primary-text-color;
+}
+
+%common-box {
+	float: left;
+	width: 50%;
+}
+
+// $module: 'alt-box';
+
+// %#{$module}--base {
+// 	text-transform: uppercase;
+// 	font-family: $alt-font-family;
+// 	font-size: 1.4em;
+// 	padding: 12px 15px 15px 20px;
+// }
+// %#{$module}--dark {
+// 	@extend %alt-box--base;
+// 	background: $box-dark-color;
+// 	color: $text-color-inverted;
+// }
+
+// %#{$module}--light {
+// 	@extend %alt-box--base;
+// 	background: $box-light-color;
+// 	color: $primary-text-color;
+// }
+
+// %#{$module}--light__active {
+// 	@extend %alt-box--light;
+// 	@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
+// }
