@@ -1,0 +1,23 @@
+$box-themes: (
+	dark : $box-dark-color,
+	light : $box-light-color
+) !default;
+
+%alt-box {
+	text-transform: uppercase;
+	font-family: $alt-font-family;
+	font-size: 1.4em;
+	padding: 12px 15px 15px 20px;
+}
+
+@mixin colorMixer($color) {
+	@extend %alt-box;
+	background: $color;
+	color: invert($color);
+}
+
+@each $theme, $color in $box-themes {
+	%alt-box--#{$theme} {
+		@include colorMixer($color);
+	}
+}

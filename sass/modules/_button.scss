@@ -1,22 +1,45 @@
 %default-button {
-	background: $primary-button-bg-color;
 	border: 0;
-	color: $primary-button-txt-color;
 	text-transform: uppercase;
 	padding: 5px 15px;
+	cursor: pointer;
 }
 
-.btn-primary {
-	@extend %default-button;
-	font-size: 1.2em;
-	padding: 5px 10px;
-	&.disabled {
-		@extend %is-disabled;
+$button-types: (
+  primary: $mediumbrown,
+  secondary: #eee,
+	thertiary: #333
+) !default;
+
+@mixin button($color) {
+  @extend %default-button;
+	@if type-of($color) == color {
+		@if lightness($color) < lightness(#e7e7e7) {
+			color: lighten($color, 65%);
+			background: $color;
+			&:hover {
+				background: lighten($color, 10%);
+			}
+			&:active {
+				background: lighten($color, 10%);
+			}
+		} @else {
+			color: darken($color, 65%);
+			background: $color;
+			&:hover {
+				background: darken($color, 10%);
+			}
+			&:active {
+				background: darken($color, 10%);
+			}
+		}
+	} @else {
+		@warn '`#{$color} is not a color!';
 	}
-	&:hover {
-		background: $primary-button-hover-color;
-	}
-	&:active {
-		@include box-shadow(0 0 2px 2px #FFFFFF);
-	}
+}
+
+@each $type, $color in $button-types {
+  .button-#{$type} {
+    @include button($color);
+  }
 }

@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $alt-font-family;
 }
 
+section {
+	padding: 10px 0;
+}
+
 .page {
 	@extend %clearfix;
 	width: $page-width;
@@ -95,14 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 .ui-helper-clearfix {
 	@extend %clearfix;
 }
-
-// .ui-tabs .ui-tabs-active .ui-tabs-anchor {
-// 	@extend %tab-box--is-light;
-// }
-
-// .ui-tabs .ui-tabs-anchor {
-// 	@extend %tab-box--is-dark;
-// }
 
 .product-view {
 	margin: 0 5px;
