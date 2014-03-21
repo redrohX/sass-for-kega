@@ -1,5 +1,9 @@
-.box__account {
+%box {
   padding: 20px 10% 20px 20px;
-  margin: 0 20px;
   background: #eee;
+}
+
+.box__account {
+  @extend %box;
+  @include rem(font-size, 12px);
 }

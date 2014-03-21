@@ -1,4 +1,5 @@
 %default-button {
+	@include rem(margin, 10px 0);
 	border: 0;
 	text-transform: uppercase;
 	padding: 5px 15px;

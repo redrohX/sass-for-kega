@@ -43,3 +43,7 @@ h5 {
 h6 {
   @include rem(font-size, 12px);
 }
+
+span {
+  color: $text-color-light;
+}
