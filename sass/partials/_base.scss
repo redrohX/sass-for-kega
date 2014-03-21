@@ -8,14 +8,9 @@ body {
 	overflow-y: scroll;
 	font-family: $primary-font-family;
 	font-weight: $primary-font-weight;
-	font-size: $primary-font-size;
+	font-size: $base-font-size;
 	color: $primary-text-color;
 	margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-size: $default-font-size;
-	font-family: $alt-font-family;
 }
 
 section {
@@ -104,12 +99,7 @@ section {
 	margin: 0 5px;
 }
 
-.product-img-box {
-	@extend %common-box;
-}
-
 .product-info-wrap {
-	@extend %common-box;
 	min-height: 499px;
 	border-left: 1px solid #fff;
 	background: $box-light-color;

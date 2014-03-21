@@ -1,13 +1,11 @@
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/states";
-
-@import "partials/base";
-@import "partials/helpers";
-@import "modules/breadcrumb";
-@import "modules/button";
-@import "modules/form";
-@import "modules/tabs";
-@import "modules/boxes";
-
-//@import "original";
+@import "partials/variables",
+        "partials/mixins",
+        "partials/states",
+        "partials/typography",
+        "partials/helpers",
+        "partials/base",
+        "modules/breadcrumb",
+        "modules/button",
+        "modules/form",
+        "modules/tabs",
+        "modules/boxes";

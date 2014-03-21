@@ -8,7 +8,8 @@
 $button-types: (
   primary: $mediumbrown,
   secondary: #eee,
-	thertiary: #333
+	thertiary: #333,
+	fourth: #ff0000,
 ) !default;
 
 @mixin button($color) {

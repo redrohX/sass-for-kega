@@ -1,3 +1,39 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  margin: 0 0 0.625rem 0; }
+
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+h5 {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+h6 {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.page:after, .header-container:after, .header-column-wrapper:after, .mini-cart-list:after, .inline-update:after, .nav-container:after, .breadcrumbs:after, .col1-layout:after, .col-main:after, .options-container-big:after, .product-essential:after, .product-media:after, .social-bar:after, .product-info-wrap:after, .product-options-bottom:after, .size-links:after, .footer-columns:after, .footer-icons:after, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -11,13 +47,9 @@ body {
   overflow-y: scroll;
   font-family: "Droid Sans", sans-serif;
   font-weight: 400;
-  font-size: 62.5%;
+  font-size: 16px;
   color: #333333;
   margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 62.5%;
-  font-family: "Roboto", Arial, sans-serif; }
 
 section {
   padding: 10px 0; }
@@ -46,12 +78,7 @@ section {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
 
-.page:after, .header-container:after, .header-column-wrapper:after, .mini-cart-list:after, .inline-update:after, .nav-container:after, .breadcrumbs:after, .col1-layout:after, .col-main:after, .options-container-big:after, .product-essential:after, .product-media:after, .social-bar:after, .product-info-wrap:after, .product-options-bottom:after, .size-links:after, .footer-columns:after, .footer-icons:after, .ui-helper-clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.button-primary, .button-secondary, .button-thertiary {
+.button-primary, .button-secondary, .button-thertiary, .button-fourth {
   border: 0;
   text-transform: uppercase;
   padding: 5px 15px;
@@ -81,6 +108,14 @@ section {
 .button-thertiary:active {
   background: #4d4d4d; }
 
+.button-fourth {
+  color: white;
+  background: red; }
+.button-fourth:hover {
+  background: #ff3333; }
+.button-fourth:active {
+  background: #ff3333; }
+
 .alt-box, .alt-box__is-active, .alt-box--alt, .alt-box--alt__is-active {
   text-transform: uppercase;
   font-family: "Roboto", Arial, sans-serif;
@@ -95,6 +130,7 @@ section {
   background: #eeeeee;
   color: #111111; }
 
-.product-img-box, .product-info-wrap {
-  float: left;
-  width: 50%; }
+.box__account {
+  padding: 20px 10% 20px 20px;
+  margin: 0 20px;
+  background: #eee; }
