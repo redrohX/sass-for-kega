@@ -32,11 +32,6 @@ h6 {
 span {
   color: #797989; }
 
-.page:after, .header-container:after, .header-column-wrapper:after, .mini-cart-list:after, .inline-update:after, .nav-container:after, .breadcrumbs:after, .col1-layout:after, .col-main:after, .options-container-big:after, .product-essential:after, .product-media:after, .social-bar:after, .product-info-wrap:after, .product-options-bottom:after, .size-links:after, .footer-columns:after, .footer-icons:after, .ui-helper-clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,30 +51,6 @@ body {
 
 section {
   padding: 10px 0; }
-
-.page {
-  width: 960px;
-  margin: 0 auto; }
-
-.product-view {
-  margin: 0 5px; }
-
-.product-info-wrap {
-  min-height: 499px;
-  border-left: 1px solid #fff;
-  background: #eeeeee; }
-
-.theme-popup #cboxWrapper {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
-
-.alt-box__is-active {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65);
-  box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65); }
-
-.alt-box--alt__is-active {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
 
 .button-primary, .button-secondary, .button-thertiary, .button-fourth {
   margin: 10px 0;
@@ -135,10 +106,32 @@ section {
   background: #eeeeee;
   color: #111111; }
 
-.box__account {
+.alt-box__is-active {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65);
+  box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65); }
+
+.alt-box--alt__is-active {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
+
+.box__gradient, .box__account {
   padding: 20px 10% 20px 20px;
-  background: #eee; }
+  background: #eee;
+  margin: 10px 0;
+  margin: 0.625rem 0; }
+.box__gradient {
+  background: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#333333));
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #333333 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 0%, #333333 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FF333333', GradientType=0); }
 
 .box__account {
   font-size: 12px;
   font-size: 0.75rem; }
+
+.box__gradient {
+  font-size: 16px;
+  font-size: 1rem;
+  color: white; }

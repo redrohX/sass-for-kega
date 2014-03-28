@@ -21,3 +21,21 @@ $box-themes: (
 		@include colorMixer($color);
 	}
 }
+
+.alt-box {
+	@extend %alt-box--dark;
+}
+
+.alt-box--alt {
+	@extend %alt-box--light;
+}
+
+.alt-box__is-active {
+	@extend %alt-box--dark;
+	@include box-shadow(0 0 7px 0 rgba(0, 122, 218, 0.65));
+}
+
+.alt-box--alt__is-active {
+	@extend %alt-box--light;
+	@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
+}

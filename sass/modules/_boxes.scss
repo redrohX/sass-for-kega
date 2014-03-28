@@ -1,9 +1,21 @@
 %box {
   padding: 20px 10% 20px 20px;
   background: #eee;
+  @include rem(margin, 10px 0);
+  &-alt {
+    @extend %box;
+    background: #eee;
+    @include gradient-vertical(#eee, #333, 0%, 100%);
+  }
 }
 
 .box__account {
   @extend %box;
   @include rem(font-size, 12px);
+}
+
+.box__gradient {
+  @extend %box-alt;
+  @include rem(font-size, 16px);
+  color: $text-color-inverted;
 }
