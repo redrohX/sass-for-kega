@@ -25,17 +25,17 @@ $tab-themes: (
 .tab {
 	@extend %tab--primary;
 
+	&--is-active {
+		@extend %is-active;
+		@extend %tab--primary;
+	}
+
 	&__alt {
 		@extend %tab--alt;
 
 		&--is-active {
+			@extend %is-active;
 			@extend %tab--alt;
-			@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
 		}
-	}
-
-	&--is-active {
-		@extend %tab--primary;
-		@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
 	}
 }

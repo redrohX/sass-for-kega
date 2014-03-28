@@ -1,3 +1,7 @@
+.tab--is-active, .tab__alt--is-active {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
@@ -107,13 +111,6 @@ section {
 .tab__alt, .tab__alt--is-active {
   background: #eeeeee;
   color: #111111; }
-
-.tab__alt--is-active {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
-.tab--is-active {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
 
 .box__gradient, .box__account {
   padding: 20px 10% 20px 20px;
