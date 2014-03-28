@@ -1,41 +1,41 @@
-$box-themes: (
-	dark : $box-dark-color,
-	light : $box-light-color
+$tab-themes: (
+	primary : $box-dark-color,
+	alt : $box-light-color
 ) !default;
 
-%alt-box {
+%tab {
+	@include rem(font-size, 14px);
+	@include rem(padding, 12px 15px 15px 20px);
 	text-transform: uppercase;
 	font-family: $alt-font-family;
-	font-size: 1.4em;
-	padding: 12px 15px 15px 20px;
 }
 
 @mixin colorMixer($color) {
-	@extend %alt-box;
+	@extend %tab;
 	background: $color;
 	color: invert($color);
 }
 
-@each $theme, $color in $box-themes {
-	%alt-box--#{$theme} {
+@each $theme, $color in $tab-themes {
+	%tab--#{$theme} {
 		@include colorMixer($color);
 	}
 }
 
-.alt-box {
-	@extend %alt-box--dark;
-}
+.tab {
+	@extend %tab--primary;
 
-.alt-box--alt {
-	@extend %alt-box--light;
-}
+	&__alt {
+		@extend %tab--alt;
 
-.alt-box__is-active {
-	@extend %alt-box--dark;
-	@include box-shadow(0 0 7px 0 rgba(0, 122, 218, 0.65));
-}
+		&--is-active {
+			@extend %tab--alt;
+			@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
+		}
+	}
 
-.alt-box--alt__is-active {
-	@extend %alt-box--light;
-	@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
+	&--is-active {
+		@extend %tab--primary;
+		@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.32));
+	}
 }

@@ -92,25 +92,26 @@ section {
 .button-fourth:active {
   background: #ff3333; }
 
-.alt-box, .alt-box__is-active, .alt-box--alt, .alt-box--alt__is-active {
+.tab, .tab--is-active, .tab__alt, .tab__alt--is-active {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 12px 15px 15px 20px;
+  padding: 0.75rem 0.9375rem 0.9375rem 1.25rem;
   text-transform: uppercase;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 1.4em;
-  padding: 12px 15px 15px 20px; }
+  font-family: "Roboto", Arial, sans-serif; }
 
-.alt-box, .alt-box__is-active {
+.tab, .tab--is-active {
   background: #333333;
   color: #cccccc; }
 
-.alt-box--alt, .alt-box--alt__is-active {
+.tab__alt, .tab__alt--is-active {
   background: #eeeeee;
   color: #111111; }
 
-.alt-box__is-active {
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65);
-  box-shadow: 0 0 7px 0 rgba(0, 122, 218, 0.65); }
-
-.alt-box--alt__is-active {
+.tab__alt--is-active {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
+.tab--is-active {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.32); }
 
