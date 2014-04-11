@@ -16,6 +16,11 @@
 
 .box__gradient {
   @extend %box-alt;
-  @include rem(font-size, 16px);
+  //@include rem(font-size, 16px);
+  font-size: em(12);
+  margin: em(10) em(10);
   color: $text-color-inverted;
+  @include bp-medium {
+    @include rem(font-size, 32px);
+  }
 }
