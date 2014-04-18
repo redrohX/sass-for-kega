@@ -5,3 +5,8 @@ body {
 ul,ol {
 	list-style: none;
 }
+
+// make color transparant if focussing the input, otherwise the placeholder text is staying there.
+[placeholder]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
