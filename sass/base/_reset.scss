@@ -1,0 +1,7 @@
+body {
+	@include rem(font-size, 10px);
+}
+
+ul,ol {
+	list-style: none;
+}

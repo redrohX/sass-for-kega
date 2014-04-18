@@ -20,3 +20,11 @@
 .header.right {
 	float: right;
 }
+
+.logo strong {
+	display: none;
+}
+
+.nav-container {
+	@extend %clearfix;
+}

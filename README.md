@@ -16,3 +16,10 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	--no-cache --update --sourcemap --style compressed
 
 
+##Notes
+- In base/reset we added legacy support for .clearfix class. In new projects we don't have to add a .clearfix class, but we can do this;
+
+
+	.nav-container {
+		@extend %clearfix;
+	}
