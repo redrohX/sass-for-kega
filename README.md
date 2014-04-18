@@ -25,7 +25,7 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	}
 	
 ##Useful built-in Sass functions
-- width: percentage(0.2) => width: 20%
-- width: percentage(100px / 50px) => width: 200%
-- color: rgba(#ff0000, 0.5); ==> color: rgba(255,0,0,0.5)
-- margin: set-nth($list: 10px 20px 30px, $n: 2, $value: -20px) => margin: 10px -20px 30px;
+	width: percentage(0.2) => width: 20%
+	width: percentage(100px / 50px) => width: 200%
+	color: rgba(#ff0000, 0.5); ==> color: rgba(255,0,0,0.5)
+	margin: set-nth($list: 10px 20px 30px, $n: 2, $value: -20px) => margin: 10px -20px 30px;
