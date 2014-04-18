@@ -1,6 +1,9 @@
 /*###################
         FORMS
 ####################*/
+@if not $form-wrapper-width {
+	$form-wrapper-width: 465px;
+}
 
 /* wrappers and dividers
 ----------------------------------- */
@@ -48,7 +51,7 @@ form ul {
 form {
 
 	ul.form-list > li {
-		width: 465px;
+		width: percentage($form-wrapper-width / 934px);
 		line-height: 2.4;
 	}
 
@@ -68,7 +71,7 @@ form {
 
 	label {
 		float: left;
-		width: 39.784946236559%;
+		width: percentage(185px / $form-wrapper-width);
 		vertical-align: middle;
 		font-size: 1.2em;
 		line-height: 2.4;
