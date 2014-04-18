@@ -24,6 +24,55 @@
 	display: none;
 }
 
+/* Navigation
+-------------------- */
 .nav-container {
 	@extend %clearfix;
+	clear: both;
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1;
+	@include rem(margin, 30px auto 0 auto);
+}
+
+.nav-container li.level0 {
+	position: relative;
+	display: inline-block;
+}
+
+.nav-container li.level0 span {
+	white-space: nowrap;
+}
+
+.nav-container li.level0 > a {
+	display: block;
+	white-space: nowrap;
+	@include rem(padding, 5px 15px);
+}
+
+.nav-container li.level0 a:hover {
+	text-decoration: none;
+}
+
+.nav-container .sub-level-inner {
+	text-align: left;
+}
+
+.nav-container li.level0 .level0 {
+	display: none;
+}
+
+/* category type styling */
+.nav-container .type-highlighted a {
+	color: #ad6a00;
+}
+
+.nav-container .type-sale a {
+	color: #eb331f;
+}
+
+/* hide look and story categories from the main menu */
+.nav-container .hide-in-main-menu {
+	display: none;
 }
