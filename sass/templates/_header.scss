@@ -1,0 +1,22 @@
+.header {
+	padding: 0;
+}
+
+.header-panel {
+	position: relative;
+	width: 100%;
+	padding: 0 5px;
+}
+
+.header-panel .full-width {
+	padding: 0 5px;
+}
+
+.header.column {
+	float: left;
+	width: 313px;
+}
+
+.header.right {
+	float: right;
+}

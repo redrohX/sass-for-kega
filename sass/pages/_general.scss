@@ -14,5 +14,20 @@ body {
 }
 
 section {
-    padding: 10px 0;
+    @include rem(padding, $gutter 0);
+}
+
+.page {
+	@include rem(width, 960px);
+	@include rem(padding, 10px $gutter);
+	margin: 0 auto;
+
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.bg-white {
+	background-color: #fff;
 }
