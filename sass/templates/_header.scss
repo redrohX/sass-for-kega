@@ -14,7 +14,7 @@
 
 .header.column {
 	float: left;
-	width: 313px;
+	width: percentage(313px / 940px);
 }
 
 .header.right {
