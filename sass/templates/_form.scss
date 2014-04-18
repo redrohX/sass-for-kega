@@ -1,9 +1,7 @@
 /*###################
         FORMS
 ####################*/
-@if not $form-wrapper-width {
-	$form-wrapper-width: 465px;
-}
+$form-wrapper-width: 465px;
 
 /* wrappers and dividers
 ----------------------------------- */

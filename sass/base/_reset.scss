@@ -1,9 +1,6 @@
-body {
-	@include rem(font-size, 10px);
-}
-
 ul,ol {
 	list-style: none;
+	@include rem(font-size, 12px);
 }
 
 // make color transparant if focussing the input, otherwise the placeholder text is staying there.

@@ -8,9 +8,17 @@ body {
     overflow-y: scroll;
     font-family: $primary-font-family;
     font-weight: $primary-font-weight;
-    font-size: $base-body-font-size;
     color: $primary-text-color;
     margin: 0;
+    @include rem(font-size, $base-body-font-size);
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 section {
