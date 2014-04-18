@@ -1,4 +1,6 @@
+// Grid
 $page-width: 960px;
+$gutter: 10px;
 
 // Colors
 $black: #000;
@@ -9,14 +11,59 @@ $white: #fff;
 $mediumbrown: #ad6a00;
 $lightbrown: #c77a00;
 
+// Typography
 $text-color-inverted: $white;
 $text-color-base: $darkgray;
 $text-color-light: $mediumgray;
 $text-color-dark: $black;
-
 $link-color: $darkgray;
 $link-hover-color: $black;
+$light-weight: 100;
+$medium-weight: 400;
+$bold-weight: 600;
+$default-font-size: 16px;
+$base-font-size: $default-font-size;
+$default-line-height: 1.4;
 
-$box-light-color: $lightgray;
-$box-medium-color: $mediumgray;
-$box-dark-color: $darkgray;
+$header-font-weight: $bold-weight;
+$primary-font-size: $default-font-size;
+$primary-font-family: "Droid Sans", sans-serif;
+$primary-font-weight: $medium-weight;
+$primary-text-color: $darkgray;
+
+$alt-font-family: "Roboto", Arial, sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  font-weight: $light-weight;
+  @include rem(margin, 0 0 10px 0);
+}
+
+h1 {
+  @include rem(font-size, 24px);
+}
+
+h2 {
+  @include rem(font-size, 20px);
+}
+
+h3 {
+  @include rem(font-size, 18px);
+}
+
+h4 {
+  @include rem(font-size, 16px);
+}
+
+h5 {
+  @include rem(font-size, 14px);
+}
+
+h6 {
+  @include rem(font-size, 12px);
+}
+
+span {
+  color: $text-color-light;
+}
