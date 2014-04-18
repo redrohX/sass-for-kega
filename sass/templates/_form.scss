@@ -4,12 +4,14 @@
 
 /* wrappers and dividers
 ----------------------------------- */
-form .divider {
-	display: block;
-	width: 580px;
-	border-bottom: solid #dfdfdc 1px;
-	line-height: 1;
-	margin-bottom: 15px;
+form {
+	.divider {
+		display: block;
+		width: 580px;
+		border-bottom: solid #dfdfdc 1px;
+		line-height: 1;
+		margin-bottom: 15px;
+	}
 }
 
 /* input
@@ -43,39 +45,58 @@ form ul {
 }
 
 /* reset the font size to 10px, child elements can use 1.6em again which is 16px */
-form ul.form-list > li {
-	width: 465px;
-	line-height: 2.4;
-}
+form {
 
-form p {
-	margin-bottom: 1.25em;
-}
+	ul.form-list > li {
+		width: 465px;
+		line-height: 2.4;
+	}
 
-form .fields {
-	clear: both;
-	width: 100%;
-}
+	p {
+		margin-bottom: 1.25em;
+	}
 
-form .fields .input-box {
-	width: 27.52688172043%;
-	margin: 0 1.505376344086% 2.1505376344086% 0;
-}
+	.field {
+		clear: left;
+		overflow: hidden;
+	}
 
-form .fields .input-box.last,
-form .fields .input-box:last-child {
-	width: 27.52688172043%;
-	margin: 0 0 2.1505376344086% 1.505376344086%;
-}
+	.field.inline {
+		clear: none;
+		margin-left: 10px;
+	}
 
-form .field {
-	clear: left;
-	overflow: hidden;
-}
+	label {
+		float: left;
+		width: 39.784946236559%;
+		vertical-align: middle;
+		font-size: 1.2em;
+		line-height: 2.4;
+	}
 
-form .field.inline {
-	clear: none;
-	margin-left: 10px;
+	.input-box {
+		float: left;
+		width: 58.064516129032%;
+		min-height: 2.4em;
+		margin: 0 0 2.1505376344086% 0;
+		vertical-align: top;
+	}
+
+	.fields {
+		clear: both;
+		width: 100%;
+
+		.input-box {
+			width: 27.52688172043%;
+			margin: 0 1.505376344086% 2.1505376344086% 0;
+
+			&:last-child,
+			.last {
+				width: 27.52688172043%;
+				margin: 0 0 2.1505376344086% 1.505376344086%;
+			}
+		}
+	}
 }
 
 fieldset {
@@ -84,29 +105,15 @@ fieldset {
 
 /* headings
 ----------------------------------- */
-form h3 {
-	font: 700 1.2em 'Istok Web', Ariel, sans-serif;
-	margin-bottom: 10px;
+form {
+	h3 {
+		font: 700 1.2em 'Istok Web', Ariel, sans-serif;
+		margin-bottom: 10px;
+	}
 }
 
 /* label and input wrapper
 ----------------------------------- */
-form label {
-	float: left;
-	width: 39.784946236559%;
-	vertical-align: middle;
-	font-size: 1.2em;
-	line-height: 2.4;
-}
-
-form .input-box {
-	float: left;
-	width: 58.064516129032%;
-	min-height: 2.4em;
-	margin: 0 0 2.1505376344086% 0;
-	vertical-align: top;
-}
-
 form .checkbox .input-box {
 	width: auto;
 }
