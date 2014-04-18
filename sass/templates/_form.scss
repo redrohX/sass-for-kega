@@ -1,0 +1,204 @@
+/*###################
+        FORMS
+####################*/
+
+/* wrappers and dividers
+----------------------------------- */
+form .divider {
+	display: block;
+	width: 580px;
+	border-bottom: solid #dfdfdc 1px;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+/* input
+----------------------------------- */
+input,
+textarea {
+	clear: both;
+	width: 100%;
+	@include rem(padding, 5px 10px);
+	border: 1px solid #ddd;
+	font-size: 1.2em;
+	height: 2.4em;
+	vertical-align: middle;
+}
+
+input:focus {
+	border-color: #727272;
+	outline: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	width: auto;
+	float: none;
+	border: none !important;
+	vertical-align: middle;
+}
+
+form ul {
+	font-size: 1em;
+}
+
+/* reset the font size to 10px, child elements can use 1.6em again which is 16px */
+form ul.form-list > li {
+	width: 465px;
+	line-height: 2.4;
+}
+
+form p {
+	margin-bottom: 1.25em;
+}
+
+form .fields {
+	clear: both;
+	width: 100%;
+}
+
+form .fields .input-box {
+	width: 27.52688172043%;
+	margin: 0 1.505376344086% 2.1505376344086% 0;
+}
+
+form .fields .input-box.last,
+form .fields .input-box:last-child {
+	width: 27.52688172043%;
+	margin: 0 0 2.1505376344086% 1.505376344086%;
+}
+
+form .field {
+	clear: left;
+	overflow: hidden;
+}
+
+form .field.inline {
+	clear: none;
+	margin-left: 10px;
+}
+
+fieldset {
+	padding: 1.0416666666667%;
+}
+
+/* headings
+----------------------------------- */
+form h3 {
+	font: 700 1.2em 'Istok Web', Ariel, sans-serif;
+	margin-bottom: 10px;
+}
+
+/* label and input wrapper
+----------------------------------- */
+form label {
+	float: left;
+	width: 39.784946236559%;
+	vertical-align: middle;
+	font-size: 1.2em;
+	line-height: 2.4;
+}
+
+form .input-box {
+	float: left;
+	width: 58.064516129032%;
+	min-height: 2.4em;
+	margin: 0 0 2.1505376344086% 0;
+	vertical-align: top;
+}
+
+form .checkbox .input-box {
+	width: auto;
+}
+
+form .checkbox label {
+	margin: 0 0 0 1.0752688172043%;
+	line-height: 1.4;
+}
+
+form .controls .input-box {
+	display: block;
+	margin: 0 0 1.25% 0;
+}
+
+/* radio and checkbox
+----------------------------------- */
+.radios .radio {
+	float: left;
+	padding: 0.6em 0.6em 0 0;
+}
+
+.radios .label-radio {
+	margin: 0 0 0 1.0416666666667%;
+	width: 25%;
+}
+
+.radios input,
+.radios span label {
+	clear: none;
+}
+
+.radios .input-box {
+	vertical-align: middle;
+}
+
+.checkbox input {
+	width: 19px;
+}
+
+.checkbox label {
+	line-height: 1.2;
+}
+
+/* selectmenu
+----------------------------------- */
+form .ui-selectmenu {
+	display: block;
+	height: 30px;
+	min-width: 100%;
+	max-width: 100%;
+	padding: 2.5% 0 0 3.5%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+form .ui-selectmenu-menu .ui-selectmenu-menu-dropdown {
+	max-height: 300px;
+}
+
+/* validation
+----------------------------------- */
+form p.required {
+	margin-bottom: 0;
+}
+
+/* button wrappers and elements
+----------------------------------- */
+.buttons-set .button.call-to-action {
+	margin-top: 10px;
+}
+
+.button.arrow-right {
+	width: 41px;
+	height: 41px;
+	text-indent: -9999em;
+}
+
+.button.arrow-right {
+	height: 35px;
+}
+
+/* Facebook button styling */
+.btn-facebook-login {
+	float: left;
+	margin: 10px 0 0 0;
+	padding: 5px 14px 2px 0;
+	font-size: 1.2em;
+	background: url(../images/fb-button-icon.gif) right top no-repeat;
+}
+
+/* hidden elements
+----------------------------------- */
+.remember-me-box {
+	display: none;
+}

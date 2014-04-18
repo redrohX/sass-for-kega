@@ -10,7 +10,7 @@
 
 @mixin rem($property, $values) {
   // Create a couple of empty lists as output buffers.
-  // $base-font-size: 16px; // should be consistent with your html/body font-size
+  // $base-rem-font-size: {x}; // should be consistent with your html/body font-size
   $px-values: ();
   $rem-values: ();
 
@@ -25,7 +25,7 @@
       $rem-values: join($rem-values, 0);
     } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
       // px value given - calculate rem value from base-font-size
-      $new-rem-value: $value / $base-font-size;
+      $new-rem-value: $value / $base-rem-font-size;
       $px-values: join($px-values, round($value));
       $rem-values: join($rem-values, #{$new-rem-value}rem);
     } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
@@ -38,7 +38,7 @@
       $rem-values: join($rem-values, auto);
     } @else {
       // unitless value - use those directly as rem and calculate the px-fallback
-      $px-values: join($px-values, round($value * $base-font-size));
+      $px-values: join($px-values, round($value * $base-rem-font-size));
       $rem-values: join($rem-values, #{$value}rem);
     }
   }
