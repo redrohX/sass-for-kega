@@ -1,11 +1,14 @@
-@import "partials/variables",
-        "partials/mixins",
-        "partials/states",
-        "partials/typography",
-        "partials/helpers",
-        "partials/base",
-        "modules/breadcrumb",
-        "modules/button",
-        "modules/form",
-        "modules/tabs",
-        "modules/boxes";
+@import "base/normalize",
+        "base/mixins",
+        "base/variables",
+        "base/mixins",
+        "base/helpers",
+
+        "templates/form",
+        "templates/button",
+        "templates/header",
+        "templates/breadcrumb",
+        "templates/lists",
+        "templates/footer",
+
+        "pages/general";
