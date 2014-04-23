@@ -1,14 +1,12 @@
-@import "base/normalize",
-		"base/mixins",
-		"base/variables",
-		"base/helpers",
-		"base/reset",
+@import
+  "base/variables",
+  "base/normalize",
+  "base/mixins",
+  "base/helpers",
+  "base/general",
 
-		"templates/form",
-		"templates/button",
-		"templates/header",
-		"templates/breadcrumb",
-		"templates/lists",
-		"templates/footer",
-
-		"pages/general";
+  "templates/form",
+  "templates/header",
+  "templates/breadcrumb",
+  "templates/lists",
+  "templates/footer";

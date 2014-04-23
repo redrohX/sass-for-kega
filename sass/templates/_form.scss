@@ -196,6 +196,54 @@ form p.required {
 	height: 35px;
 }
 
+%default-button {
+  @include rem(margin, 10px 0);
+  border: 0;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+$button-types: (
+  primary: $mediumbrown,
+  secondary: #eee,
+	thertiary: #333,
+	fourth: #ff0000,
+) !default;
+
+@mixin button($color) {
+  @extend %default-button;
+  @if type-of($color) == color {
+    @if lightness($color) < lightness(#e7e7e7) {
+      color: lighten($color, 65%);
+      background: $color;
+      &:hover {
+        background: lighten($color, 10%);
+      }
+      &:active {
+        background: lighten($color, 10%);
+      }
+    } @else {
+      color: darken($color, 65%);
+      background: $color;
+      &:hover {
+        background: darken($color, 10%);
+      }
+      &:active {
+        background: darken($color, 10%);
+      }
+    }
+  } @else {
+    @warn '`#{$color} is not a color!';
+  }
+}
+
+@each $type, $color in $button-types {
+  .button-#{$type} {
+    @include button($color);
+  }
+}
+
 /* Facebook button styling */
 .btn-facebook-login {
 	float: left;
