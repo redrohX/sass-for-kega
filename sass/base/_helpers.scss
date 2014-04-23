@@ -6,3 +6,9 @@
 		clear: both;
 	}
 }
+
+.structural,
+%structural {
+	position: absolute;
+	left: -9999px;
+}

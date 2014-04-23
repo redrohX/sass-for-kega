@@ -48,6 +48,12 @@ form ul {
 /* reset the font size to 10px, child elements can use 1.6em again which is 16px */
 form {
 
+	.panel {
+		background: $panel-background;
+		border: 0;
+		padding: percentage(15/960);
+	}
+
 	ul.form-list > li {
 		width: percentage($form-wrapper-width / 934px);
 		line-height: 2.4;
@@ -98,10 +104,24 @@ form {
 			}
 		}
 	}
-}
 
-fieldset {
-	padding: 1.0416666666667%;
+	.label-radio {
+		float: none;
+	}
+
+	.checkbox {
+		.input-box {
+			width: auto;
+		}
+
+		label {
+			padding-top: 7px;
+		}
+	}
+
+	.register-button-set {
+		float: right;
+	}
 }
 
 /* headings
@@ -197,11 +217,12 @@ form p.required {
 }
 
 %default-button {
-  @include rem(margin, 10px 0);
-  border: 0;
-  text-transform: uppercase;
-  padding: 5px 15px;
-  cursor: pointer;
+	@include rem(margin, 10px 0);
+	@include rem(font-size, 12px);
+	@include rem(padding, 5px 20px);
+	border: 0;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 $button-types: (
@@ -212,36 +233,36 @@ $button-types: (
 ) !default;
 
 @mixin button($color) {
-  @extend %default-button;
-  @if type-of($color) == color {
-    @if lightness($color) < lightness(#e7e7e7) {
-      color: lighten($color, 65%);
-      background: $color;
-      &:hover {
-        background: lighten($color, 10%);
-      }
-      &:active {
-        background: lighten($color, 10%);
-      }
-    } @else {
-      color: darken($color, 65%);
-      background: $color;
-      &:hover {
-        background: darken($color, 10%);
-      }
-      &:active {
-        background: darken($color, 10%);
-      }
-    }
-  } @else {
-    @warn '`#{$color} is not a color!';
-  }
+	@extend %default-button;
+	@if type-of($color) == color {
+		@if lightness($color) < lightness(#e7e7e7) {
+			color: lighten($color, 65%);
+			background: $color;
+			&:hover {
+				background: lighten($color, 10%);
+			}
+			&:active {
+				background: lighten($color, 10%);
+			}
+		} @else {
+			color: darken($color, 65%);
+			background: $color;
+			&:hover {
+				background: darken($color, 10%);
+			}
+			&:active {
+				background: darken($color, 10%);
+			}
+		}
+	} @else {
+		@warn '`#{$color} is not a color!';
+	}
 }
 
 @each $type, $color in $button-types {
-  .button-#{$type} {
-    @include button($color);
-  }
+	.button-#{$type} {
+		@include button($color);
+	}
 }
 
 /* Facebook button styling */

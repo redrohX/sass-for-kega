@@ -176,9 +176,10 @@
 								<!-- [END] Main Content Area - Top of the main content area -->
 				<!-- [START] Main Content Area -->
 				<div class="account-create">
-	<div class="page-title">
+	<div class="page-title clearfix">
 		<h1>New Account</h1>
-	</div>
+        <p class="back-link"><a href="https://www.chasin.com/en/customer/account/login/"><small>&laquo; </small>Back</a></p>
+    </div>
 			<form class="theme1 account-register validate-form" action="https://www.chasin.com/en/customer/account/createpost/" method="post" id="account-create-form" enctype="multipart/form-data">
 				<input name="form_key" type="hidden" value="ziIinWSlk4TxX181" />
 		<fieldset class="panel register-form top clearfix">
@@ -190,7 +191,7 @@
             			<ul class="form-list clearfix">
 				<li>
 
-<div class="field gender radios">
+<div class="fields gender radios">
 	<label class="required">Gender<em>*</em></label>
     <div class="input-box">
                                                             <input type="radio" name="gender" id="gender-1" value="1" class="validate-one-required-by-name gender-1"  />
@@ -249,20 +250,15 @@
 							<input type="text" title="Street Address" name="street[0]" id="street_1" value="" class="input-text  required-entry" />
 						</div>
 					</li>
-					<li class="field housenumber">
-						<ul>
-																				<li class="add-field inline chop-down-validation">
+					<li class="fields housenumber">
+
 																<label for="street_2" class="required">Housenumber <em>*</em></label>
 																<div class="input-box">
 									<input type="text" title="Street Address 2" name="street[1]" placeholder="" placeholder="Your street name" id="street_2" value="" class="input-text  required-entry street2" />
 								</div>
-							</li>
-																				<li class="add-field inline chop-down-validation">
 																<div class="input-box">
 									<input type="text" title="Street Address 3" name="street[2]" placeholder="Addition" placeholder="Your street name" id="street_3" value="" class="input-text  street3" />
 								</div>
-							</li>
-												</ul>
 					</li>
 					<li class="field">
 						<div class="postcode chop-down-validation">
@@ -296,20 +292,15 @@
 				</ul>
 						<ul class="form-list">
 					<li class="fields password clearfix" id="register-customer-password">
-						<div class="field chop-down-validation">
 							<label for="password" class="required">Password<em>*</em></label>
 							<div class="input-box">
 								<input type="password" name="password" id="password" value="" title="Password" class="input-text required-entry validate-password" />
 							</div>
-						</div>
-						<div class="field inline chop-down-validation">
 							<div class="input-box">
 								<input type="password" name="confirmation" placeholder="Repeat Password" title="Confirm Password" id="confirmation" value="" class="input-text required-entry validate-cpassword" />
-								<span class="hint">A good password consists of at least six characters, including at least one digit</span>
 							</div>
-						</div>
 					</li>
-										<li>
+										<li class="checkbox">
 						<div class="newsletter clearfix">
 							<div class="input-box">
 								<input type="checkbox" name="is_subscribed" title="Subscribe to newsletter" value="1" id="is_subscribed" class="checkbox" />
@@ -349,11 +340,10 @@
 		</fieldset>
 
 		<div class="buttons-set register-button-set form-buttons">
-			  <button type="submit" class="button" title="Save"><span><span>Save</span></span></button>
+			  <button type="submit" class="button-primary button" title="Save">Save</button>
 		</div>
 
 	</form>
-	<p class="back-link"><a href="https://www.chasin.com/en/customer/account/login/"><small>&laquo; </small>Back</a></p>
 
 	<script type="text/javascript">
 	//<![CDATA[
