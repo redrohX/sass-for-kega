@@ -23,7 +23,7 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	.nav-container {
 		@extend %clearfix;
 	}
-	
+
 ##Useful built-in Sass functions
 	width: percentage(0.2) => width: 20%
 	width: percentage(100px / 50px) => width: 200%
@@ -35,6 +35,7 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	@include element-font-bg-color(#fff); => background: #fff; color: #000; //checks if the text color isn't too light for the background
 	width: percentage(strip-unit(100px) / strip-unit(50px)) => width: 200% // strip the unit from the value
 	@extend %clearfix; //extending the silent class .clearfix which prevents template copies
+	@include box-shadow($default-box-shadow, inset 10px 10px 10px orange) => box-shadow: 2px 2px 2px 4px #ddd, inset 10px 10px 10px orange;
 
 ##Sass and vendor-prefixes
 As with normal CSS, we don't use tools and / or libraries for autoprefixing the css properties for al vendors.
