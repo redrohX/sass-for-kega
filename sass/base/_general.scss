@@ -8,7 +8,7 @@ body {
 	overflow-y: scroll;
 	font-family: $primary-font-family;
 	font-weight: $primary-font-weight;
-	color: $primary-text-color;
+	color: $text-color-base;
 	margin: 0;
 	@include rem(font-size, $base-body-font-size);
 }

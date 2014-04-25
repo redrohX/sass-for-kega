@@ -2,26 +2,36 @@
 $page-width: 960px;
 $gutter: 5px;
 
-// Colors
-$black: #000;
-$darkgray: #333;
-$mediumgray: #797989;
-$lightgray: #eee;
-$white: #fff;
-$mediumbrown: #ad6a00;
-$lightbrown: #c77a00;
+/* Site colors
+/* Define all colors used in the site in a Sass map.
+/* Never use these colors on their own, but through a variable.
+/* Example: $variable: map-get($site-colors, white);
+----------------------------------- */
+$site-colors: (
+  black: #000,
+  darkgray: #333,
+  mediumgray: #797989,
+  lightgray: #eee,
+  white: #fff,
+  mediumbrown: #ad6a00,
+  lightbrown: #c77a00
+);
 
 // Variable assignments
-$text-color-inverted: $white;
-$text-color-base: $darkgray;
-$text-color-light: $mediumgray;
-$text-color-dark: $black;
-$link-color: $darkgray;
-$link-hover-color: $black;
-$panel-background: $lightgray;
+$text-color-inverted: map-get($site-colors, white);
+$text-color-base:  map-get($site-colors, darkgray);
+$text-color-light: map-get($site-colors, mediumgray);
+$text-color-dark: map-get($site-colors, black);
+
+$link-color: map-get($site-colors, darkgray);
+$link-hover-color: map-get($site-colors, black);
+
+$panel-background: map-get($site-colors, lightgray);
+
 $light-weight: 100;
 $medium-weight: 400;
 $bold-weight: 600;
+
 $default-font-size: 16px;
 $base-body-font-size: 10px;
 $base-rem-font-size: $default-font-size;
@@ -31,14 +41,12 @@ $header-font-weight: $bold-weight;
 $primary-font-size: $default-font-size;
 $primary-font-family: "Droid Sans", sans-serif;
 $primary-font-weight: $medium-weight;
-$primary-text-color: $darkgray;
 
 $alt-font-family: "Roboto", Arial, sans-serif;
 
 // Button types
 $button-types: (
-  primary: $mediumbrown,
-  secondary: #eee,
-  thertiary: #333,
-  fourth: #ff0000
+  primary: map-get($site-colors, mediumbrown),
+  secondary: map-get($site-colors, lightgray),
+  thertiary: map-get($site-colors, darkgray)
 );
