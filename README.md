@@ -29,3 +29,9 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	width: percentage(100px / 50px) => width: 200%
 	color: rgba(#ff0000, 0.5); ==> color: rgba(255,0,0,0.5)
 	margin: set-nth($list: 10px 20px 30px, $n: 2, $value: -20px) => margin: 10px -20px 30px;
+
+##Sass and vendor-prefixes
+As with normal CSS, we don't use tools and / or libraries for autoprefixing the css properties for al vendors.
+You can use Emmet which is available in PHPStorm for this.
+
+	box-sha (press TAB) results in -> -webkit-box-shadow: ;-moz-box-shadow: ;box-shadow: ;
