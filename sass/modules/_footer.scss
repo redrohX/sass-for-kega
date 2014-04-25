@@ -1,11 +1,11 @@
 footer {
-  margin: 0 5px;
+  @include rem(margin, 0 5px);
 }
 
 .bottom-links {
+  @include rem(padding, 0 0 15px);
   clear: left;
   float: left;
-  padding-bottom: 15px;
 }
 
 .bottom-links li {
