@@ -51,7 +51,7 @@ form {
 	.panel {
 		background: $panel-background;
 		border: 0;
-		padding: percentage(15/960);
+		padding: percentage(15 / strip-unit($page-width));
 	}
 
 	ul.form-list > li {
