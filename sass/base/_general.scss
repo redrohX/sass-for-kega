@@ -11,6 +11,7 @@ body {
 	color: $text-color-base;
 	margin: 0;
 	@include rem(font-size, $base-body-font-size);
+    @include box-shadow();
 }
 
 a {

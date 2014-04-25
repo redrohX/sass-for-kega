@@ -44,6 +44,8 @@ $primary-font-weight: $medium-weight;
 
 $alt-font-family: "Roboto", Arial, sans-serif;
 
+$base-box-shadow: 0 7px 4px rgba(0, 0, 0, 0.21);
+
 // Button types
 $button-types: (
   primary: map-get($site-colors, mediumbrown),
