@@ -30,6 +30,12 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 	color: rgba(#ff0000, 0.5); ==> color: rgba(255,0,0,0.5)
 	margin: set-nth($list: 10px 20px 30px, $n: 2, $value: -20px) => margin: 10px -20px 30px;
 
+##Useful mixins and functions (extended) by Kega
+	@include rem(padding, 5px) => padding: 5px; padding: 0.5rem; //fallback for older browsers
+	@include element-font-bg-color(#fff); => background: #fff; color: #000; //checks if the text color isn't too light for the background
+	width: percentage(strip-unit(100px) / strip-unit(50px)) => width: 200% // strip the unit from the value
+	@extend %clearfix; //extending the silent class .clearfix which prevents template copies
+
 ##Sass and vendor-prefixes
 As with normal CSS, we don't use tools and / or libraries for autoprefixing the css properties for al vendors.
 You can use Emmet which is available in PHPStorm for this.
