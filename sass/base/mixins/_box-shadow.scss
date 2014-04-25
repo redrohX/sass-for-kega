@@ -1,7 +1,36 @@
-// Box Shadow
+// Box-shadow
+//
+// A handy box-shadow @mixin that can be used in several different ways.
+//
+// By including a theme based $base-box-shadow variable in /base/_variables
+// we will overwrite the !default set $base-box-shadow variable in this file,
+// which exists so we can use the @mixin without any arguments so it will use default values.
+//
+// Four reasons why.
+// 1: No $base-box-value is set at all and we use @include $box-shadow(): Sass will give an error.
+// 2: No $base-box-value is set at all: we need to manually repeat the same box-shadow values for each mixin
+//    @include throughout our Sass files. We could almost not use a mixin.
+// 3: Unfortunatly Sass doesn't allow to put a @mixin in an @if statement (yet) where we do a check
+//    global-variable-exists(variable), to see if the variable exists.
+// 4: By setting a default $base-box-shadow we have default values, so we can still use the mixin
+//    without setting any arguments and we don't have to repeat the same values throughout our Sass files.
+//
+// Usage:
+//
+// Without $base-box-shadow variable set in /base/_variables.scss
+// @include box-shadow(); => box-shadow: 8px 8px 8px orange; (the $base-box-shadow values set in this file)
+//
+// With $base-box-shadow variable set in /base/_variables.scss
+// @include box-shadow(); => box-shadow: 1px 1px 1px 2px #ddd; (the value from your $base-box-shadow in /base/_variables)
+//
+// Multiple values used ase arguments:
+// @include box-shadow($double-box-shadow); => box-shadow: 1px 1px 1px orange, 4px 4px 4px green;
+//------------------------------------------------------------------------------------------------------------------------//
 
-@mixin box-shadow($value: $base-box-shadow) {
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;
-  box-shadow: $value;
+$base-box-shadow: 8px 8px 8px orange !default;
+
+@mixin box-shadow($value: $base-box-shadow, $value2...) {
+  -webkit-box-shadow: $value, $value2;
+  -moz-box-shadow: $value, $value2;
+  box-shadow: $value, $value2;
 }
