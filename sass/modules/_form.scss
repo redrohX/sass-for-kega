@@ -202,6 +202,26 @@ form p.required {
 
 /* button wrappers and elements
 ----------------------------------- */
+
+// defining the default button class
+%default-button {
+  @include rem(margin, 10px 0);
+  @include rem(font-size, 12px);
+  @include rem(padding, 5px 20px);
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+//looping through the defined $variables in button-types to generate our buttons
+@each $type, $color in $button-types {
+  .button-#{$type} {
+    @include element-font-bg-color($color);
+    @extend %default-button;
+  }
+}
+
+
 .buttons-set .button.call-to-action {
 	margin-top: 10px;
 }
@@ -214,55 +234,6 @@ form p.required {
 
 .button.arrow-right {
 	height: 35px;
-}
-
-%default-button {
-	@include rem(margin, 10px 0);
-	@include rem(font-size, 12px);
-	@include rem(padding, 5px 20px);
-	border: 0;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-
-$button-types: (
-  primary: $mediumbrown,
-  secondary: #eee,
-	thertiary: #333,
-	fourth: #ff0000,
-) !default;
-
-@mixin button($color) {
-	@extend %default-button;
-	@if type-of($color) == color {
-		@if lightness($color) < lightness(#e7e7e7) {
-			color: lighten($color, 65%);
-			background: $color;
-			&:hover {
-				background: lighten($color, 10%);
-			}
-			&:active {
-				background: lighten($color, 10%);
-			}
-		} @else {
-			color: darken($color, 65%);
-			background: $color;
-			&:hover {
-				background: darken($color, 10%);
-			}
-			&:active {
-				background: darken($color, 10%);
-			}
-		}
-	} @else {
-		@warn '`#{$color} is not a color!';
-	}
-}
-
-@each $type, $color in $button-types {
-	.button-#{$type} {
-		@include button($color);
-	}
 }
 
 /* Facebook button styling */
