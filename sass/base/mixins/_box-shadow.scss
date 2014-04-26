@@ -30,7 +30,7 @@
 $base-box-shadow: 8px 8px 8px orange !default;
 
 @mixin box-shadow($value: $base-box-shadow, $value2...) {
-  -webkit-box-shadow: $value, $value2;
-  -moz-box-shadow: $value, $value2;
-  box-shadow: $value, $value2;
+  @include prefixer((
+    box-shadow: #{$value, $value2}
+  ));
 }
