@@ -12,3 +12,10 @@
 	position: absolute;
 	left: -9999px;
 }
+
+%ellipsis {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
