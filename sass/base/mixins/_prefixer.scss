@@ -25,7 +25,7 @@
 // }
 //------------------------------------------------------------------------------------------------------------------------//
 
-@mixin prefixer($declarations, $prefixes: webkit) {
+@mixin prefixer($declarations, $prefixes: webkit moz o) {
   @each $property, $value in $declarations {
     @if $prefixes {
       @each $prefix in $prefixes {
