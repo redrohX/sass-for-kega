@@ -3,12 +3,31 @@
 ##Description
 A proof of concept where we proof Sass will be useful at Kega.
 
+
 ##Architecture
 - base; contains the basic page styling like normalize, variables (colors and fonts) and mixins.
-- templates; contains the segments of the website structured by example in header, breadcrumbs and footer.
+- modules; contains the segments of the website structured by example in header, breadcrumbs and footer.
 - pages; contains page specific styling, like we currently have.
 
-main.scss; **do not write css or sass here** this file compiles everything into a css file.
+main.scss; **do not write css or sass here** this file compiles everything into a CSS file. This is where you include all your other Sass files so they will be
+compiled into a CSS file.
+
+
+###Base
+The base folder contains the base of the site. It's divided into several files and a folder with mixins.
+- The variables file contains all site specific colors, fonts, link-colors, button-types and everything else that can fit in a reusable variable.
+- The functions file contains Kega specific functions, usually specific to the project or tools like a strip-unit function.
+- Helpers are usually placeholder selectors (%foo) or classes (.foo) that can be included into the project. For example: you can find the clearfix rule in here.
+- General is where we keep our default styling for common elements such as the body and anchor tags. See it as our own reset file.
+- Mixins allow you to define styles that can be re-used throughout the stylesheet. It's where we keep our gradients, prefixers, box-shadow and other logic.
+
+###Modules
+Modules contain segments that are reused throughout the site. These are usually a combination of elements that make up a bigger module.
+You can find for example the header, footer, breadcrumbs and social network icons in here.
+
+###Pages
+Pages is where we keep our page specific CSS. This is something we won't be using for any other module or page on the site.
+For example you can find specific styling for the job vacancy pages or the product detail page.
 
 ##Tools
 Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders the css with the correct (debug) parameters and without cache.
@@ -17,7 +36,7 @@ Using watcherTasks.xml as File watcher in PHPStorm and certain arguments renders
 
 
 ##Notes
-- In base/reset we added legacy support for .clearfix class. In new projects we don't have to add a .clearfix class, but we can use a silent class, which will not be included in the css file as a class.
+- In base/helpers we added legacy support for .clearfix class. In new projects we don't have to add a .clearfix class, but we can use a silent class, which will not be included in the css file as a class.
 
 
 	.nav-container {
