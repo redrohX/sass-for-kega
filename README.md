@@ -15,11 +15,11 @@ compiled into a CSS file.
 
 ###Base
 The base folder contains the base of the site. It's divided into several files and a folder with mixins.
-- The variables file contains all site specific colors, fonts, link-colors, button-types and everything else that can fit in a reusable variable.
-- The functions file contains Kega specific functions, usually specific to the project or tools like a strip-unit function.
-- Helpers are usually placeholder selectors (%foo) or classes (.foo) that can be included into the project. For example: you can find the clearfix rule in here.
-- General is where we keep our default styling for common elements such as the body and anchor tags. See it as our own reset file.
-- Mixins allow you to define styles that can be re-used throughout the stylesheet. It's where we keep our gradients, prefixers, box-shadow and other logic.
+- variables; The variables file contains all site specific colors, fonts, link-colors, button-types and everything else that can fit in a reusable variable.
+- functions; The functions file contains Kega specific functions, usually specific to the project or tools like a strip-unit function.
+- helpers; Helpers are usually placeholder selectors (%foo) or classes (.foo) that can be included into the project. For example: you can find the clearfix rule in here.
+- general; General is where we keep our default styling for common elements such as the body and anchor tags. See it as our own reset file.
+- mixins; Mixins allow you to define styles that can be re-used throughout the stylesheet. It's where we keep our gradients, prefixers, box-shadow and other logic.
 
 ###Modules
 Modules contain segments that are reused throughout the site. These are usually a combination of elements that make up a bigger module.
