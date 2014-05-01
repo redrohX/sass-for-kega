@@ -2,3 +2,12 @@
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
+
+/* only use the site colors defined in $site-colors map */
+@function color($color-name) {
+  @if type-of(map-get($site-colors, $color-name)) == 'color' {
+    @return map-get($site-colors, $color-name);
+  } @else {
+    @warn '#{$color-name} is not a color.';
+  }
+}
