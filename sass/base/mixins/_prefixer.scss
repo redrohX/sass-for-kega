@@ -1,0 +1,37 @@
+// Prefixer
+//
+// Based on the Bourbon prefixer mixin, but optimization credits go to Hugo Giraudel https://github.com/thoughtbot/bourbon/issues/361
+// The prefixer is for generating vendor prefixed declarations. The prefixer accepts the following prefixes: webkit moz ms o and
+// should generally be used in other mixins.
+//
+// Example usage in another mixin:
+//
+// @mixin box-shadow($value: $base-box-shadow, $value2...) {
+//   @include prefixer((
+//     box-shadow: #{$value, $value2}
+//   ), webkit moz);
+// }
+//
+// .box {
+//   @include box-shadow();
+// }
+//
+// CSS
+//
+// .box {
+//   -webkit-box-shadow: 8px 8px 8px orange;
+//   -moz-box-shadow: 8px 8px 8px orange;
+//   box-shadow: 8px 8px 8px orange;
+// }
+//------------------------------------------------------------------------------------------------------------------------//
+
+@mixin prefixer($declarations, $prefixes: webkit moz o) {
+  @each $property, $value in $declarations {
+    @if $prefixes {
+      @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+      }
+    }
+    #{$property}: $value;
+  }
+}
