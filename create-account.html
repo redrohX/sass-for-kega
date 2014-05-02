@@ -132,20 +132,11 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-//<![CDATA[
-    var dataForm = new VarienForm('form-validate', true);
-//]]>
-</script>
-                                <form id="search_mini_form" class="theme2 mini-search catalogsearch" action="https://www.chasin.com/en/catalogsearch/result/" method="get">
-	<input id="search" type="text" name="q" value="" class="input-text" maxlength="128" />
-	<button type="submit" title="Find store" class="button-search"></button>
-	<script type="text/javascript">
-	//<![CDATA[
-		var searchForm = new Varien.searchForm('search_mini_form', 'search', '|  Search for products');
-	//]]>
-	</script>
-</form>
+			<form id="search_mini_form" class="theme2 mini-search catalogsearch"
+				  action="https://www.chasin.com/en/catalogsearch/result/" method="get">
+				<input id="search" type="text" name="q" value="" class="input-text" maxlength="128"/>
+				<button type="submit" title="Find store" class="button-search"></button>
+			</form>
             </div>
             <!-- [START] Page Header -->
                         <!-- [END] Page Header -->
@@ -314,27 +305,6 @@
 	<label for="remember_meH1xpatsdQW">Remember Me</label>
 </li>
 			</ul>
-			<script type="text/javascript">
-//<![CDATA[
-    var showTooltip = function() {
-        this.rememberTip = new Enterprise.Widget.Dialog(
-            'What is this?',
-            '<p>Checking &quot;Remember Me&quot; will let you access your shopping cart on this computer when you are logged out</p>'+
-            '<div class="buttons-set"><button type="button" class="button btn-close"><span><span>Close</span></span></button></div>',
-            'popup-remember-tip'
-        ),
-        $(this.rememberTip.getContent()).select('button.btn-close')[0].onclick = this.rememberTip.hide.bind(this.rememberTip);
-        this.rememberTip.show();
-        return false;
-    }
-
-    document.observe("dom:loaded", function() {
-        $$('#remember-me-box a').each(function(element) {
-            Event.observe(element, 'click', showTooltip);
-        });
-    });
-//]]>
-</script>
 			<input type="hidden" name="default_billing" value="1" />
 			<input type="hidden" name="default_shipping" value="1" />
 			<p class="field required-field-notice">* Required fields</p>
@@ -343,16 +313,7 @@
 		<div class="buttons-set register-button-set form-buttons">
 			  <button type="submit" class="button-primary button" title="Save">Save</button>
 		</div>
-
 	</form>
-
-	<script type="text/javascript">
-	//<![CDATA[
-		Form.getElements('form-validate').each(function(element) {
-			element.setAttribute('autocomplete', 'off');
-		});
-	//]]>
-	</script>
 </div>
 				<!-- [END] Main Content Area -->
 				<!-- [START] Main Content Area - Bottom of the main content area -->
