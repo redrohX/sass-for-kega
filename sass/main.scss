@@ -1,13 +1,16 @@
 @import
-  "base/functions",
-  "base/variables",
-  "base/normalize",
-  "base/mixins",
-  "base/helpers",
-  "base/general",
+	"external/fontawesome/fontawesome",
 
-  "modules/form",
-  "modules/header",
-  "modules/breadcrumb",
-  "modules/lists",
-  "modules/footer";
+	"base/functions",
+	"base/variables",
+
+	"base/normalize",
+	"base/mixins",
+	"base/helpers",
+	"base/general",
+
+	"modules/form",
+	"modules/header",
+	"modules/breadcrumb",
+	"modules/lists",
+	"modules/footer";

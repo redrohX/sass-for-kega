@@ -1,0 +1,23 @@
+// Font awesome
+//
+// When using font awesome you don't have to extend two classes at one time.
+// Usage: @include icon(search);
+//
+//------------------------------------------------------------------------------------------------------------------------//
+
+$font-awesome: false !default;
+
+@mixin icon($icon, $button: false) {
+	@debug #{$font-awesome};
+	@if $font-awesome {
+		@extend .fa; /* default font awesome class */
+		@extend .fa-#{$icon};
+	} @else {
+		@warn 'Fontawesome is not enabled';
+	}
+
+	@if $button {
+		background: none;
+		border: none;
+	}
+}

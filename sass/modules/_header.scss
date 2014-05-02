@@ -91,3 +91,13 @@
 .nav-container .hide-in-main-menu {
 	display: none;
 }
+
+/* (mini) catalogsearch */
+.header .button-search {
+	@include icon(search, true);
+	position: absolute;
+	top: 0.2em;
+	right: 0.5em;
+	color: color(darkgrey);
+	font-size: 2em;
+}
