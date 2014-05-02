@@ -1,0 +1,88 @@
+/* product list
+----------------------------------- */
+.products-list {
+	float: left;
+	overflow: visible;
+	font-size: 1em;
+
+	li.item {
+		width: auto;
+		margin: 5px;
+
+		&:hover .productlist-info {
+			display: block;
+			position: absolute;
+			@include rem(padding, 10px 10px 0);
+			bottom: 0;
+			left: 0;
+			@include rem(width, 230px);
+			background: rgba(color(black), 0.45);
+		}
+	}
+
+	.item-wrap {
+		position: relative;
+	}
+
+	.productlist-info {
+		display: none;
+		position: relative;
+		@include rem(height, 74px);
+
+		a,
+		span {
+			color: color(white);
+		}
+	}
+
+	.price-box {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		color: #fff;
+
+		p {
+			display: inline;
+		}
+
+		.old-price,
+		.special-price,
+		.regular-price {
+			font: $medium-weight 1.4em/1 $alt-font-family;
+			color: #fff;
+		}
+
+		.old-price {
+			@include rem(padding-right, 10px);
+		}
+
+		.special-price {
+			font-weight: $bold-weight;
+		}
+
+		.price-label {
+			display: none;
+		}
+	}
+
+	.product-image a {
+		display: block;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.product-name {
+		overflow: hidden;
+		font: $medium-weight 1em/1 $alt-font-family;
+
+		a {
+			font-size: 1.4em;
+			text-decoration: none;
+			color: color(white);
+			line-height: 1.2;
+		}
+	}
+}
