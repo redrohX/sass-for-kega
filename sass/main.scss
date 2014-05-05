@@ -3,12 +3,11 @@
 
 	"base/functions",
 	"base/variables",
-
-	"base/normalize",
+    "external/normalize/normalize",
 	"base/mixins",
 	"base/helpers",
-	"base/general",
 
+	"modules/generic_content",
 	"modules/form",
 	"modules/header",
 	"modules/breadcrumb",
